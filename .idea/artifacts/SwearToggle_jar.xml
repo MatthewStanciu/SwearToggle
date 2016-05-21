@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="SwearToggle:jar">
+    <output-path>$USER_HOME$/Downloads</output-path>
+    <root id="archive" name="SwearToggle.jar">
+      <element id="module-output" name="SwearToggle" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/net/extrillius/sweartoggle/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/net/extrillius/sweartoggle/plugin.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java" />
+    </root>
+  </artifact>
+</component>

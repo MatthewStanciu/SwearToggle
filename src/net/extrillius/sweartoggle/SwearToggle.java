@@ -63,7 +63,7 @@ public class SwearToggle extends JavaPlugin implements Listener {
         Iterator<Player> it = event.getRecipients().iterator();
         while (it.hasNext()) {
             Player p = it.next();
-            if (!(playerList.contains(p.getName()))) {
+            if (playerList.contains(p.getName())) {
                 it.remove();
                 filteredPlayers.add(p);
             }
