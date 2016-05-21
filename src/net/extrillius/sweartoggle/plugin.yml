@@ -1,0 +1,26 @@
+name: SwearToggle
+author: TechBug2012
+description: A custom swear toggle plugin for Extrillius
+version: 2.0
+main: net.extrillius.sweartoggle.SwearToggle
+
+commands:
+  swear:
+    description: The main command for the plugin
+
+permissions:
+    swear.reload:
+      description: Player is able to reload the config.
+      default: op
+    swear.add:
+      description: Add a word to the swear list.
+      default: op
+    swear.remove:
+      description: Remove a word from the swear list.
+      default: op
+    swear.pardon:
+      description: Pardons a word that contains a banned word.
+      default: op
+    swear.unpardon:
+      description: Unpardons a word that contains a banned word.
+      default: op
