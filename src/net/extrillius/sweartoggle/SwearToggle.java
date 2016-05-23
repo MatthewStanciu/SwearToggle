@@ -39,34 +39,34 @@ public class SwearToggle extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event) {
+    /*
+    So my idea here is that I split the message and check each word individually. If that word is a
+    banned word and not a pardoned word, then censor it. If it is both a banned word AND a pardoned
+    word, don't do anything -- break, return, whatever. As each word is finished, put it into a
+    StringBuilder, then set newMessage to sb.toString().
+    */
         Set<Player> filteredPlayers = new HashSet<>();
         String newMessage = event.getMessage();
         String[] splitMessage = event.getMessage().split(" ");
         StringBuilder sb = new StringBuilder();
+        StringBuilder mb = new StringBuilder();
 
         for (String word : wordList) {
             for (String pardoned : pardonedList) {
-                if (StringUtils.containsIgnoreCase(newMessage, word)) {
-                    for (int i = 0; i < word.length(); i++) {
-                        sb.append("*");
+                for (int i = 0; i < word.length(); i++) {
+                    sb.append("*");
+                }
+                for (String split : splitMessage) {
+                    if (StringUtils.containsIgnoreCase(split, word)) {
+                        if (!(split.equalsIgnoreCase(pardoned))) {
+                            split = split.replaceAll(word, sb.toString());
+                        }
                     }
-                    newMessage = newMessage.replaceAll(word, sb.toString());
-                    /*
-                    for (String split : splitMessage) {
-                        if (split.equalsIgnoreCase(word)) {
-                            split.replace(split, sb.toString());
-                        }
-                        if (split.equalsIgnoreCase(pardoned)) {
-                            split.replace(split, split);
-                        }
-
-                        So my idea here is that I split the message and check each word individually. If that word is a
-                        banned word and not a pardoned word, then censor it. If it is both a banned word AND a pardoned
-                        word, don't do anything -- break, return, whatever. As each word is finished, put it into a
-                        StringBuilder, then set newMessage to sb.toString().
-                    }*/
+                    mb.append(split);
+                    mb.append(" ");
                 }
             }
+            newMessage = mb.toString();
         }
 
         Iterator<Player> it = event.getRecipients().iterator();
