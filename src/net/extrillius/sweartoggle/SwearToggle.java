@@ -59,15 +59,15 @@ public class SwearToggle extends JavaPlugin implements Listener {
                 for (String split : splitMessage) {
                     if (StringUtils.containsIgnoreCase(split, word)) {
                         if (!(split.equalsIgnoreCase(pardoned))) {
-                            split = split.replaceAll(word, sb.toString());
+                            split = split.replace(word, sb.toString());
                         }
                     }
                     mb.append(split);
                     mb.append(" ");
                 }
             }
-            newMessage = mb.toString();
         }
+        newMessage = mb.toString();
 
         Iterator<Player> it = event.getRecipients().iterator();
         while (it.hasNext()) {
