@@ -16,9 +16,9 @@ import java.util.*;
  * Created by TechBug2012 on 5/20/16.
  */
 public class SwearToggle extends JavaPlugin implements Listener {
-    List<String> wordList;
-    List<String> playerList;
-    List<String> pardonedList;
+    private List<String> wordList;
+    private List<String> playerList;
+    private List<String> pardonedList;
 
     public void onEnable() {
         getConfig().addDefault("words", new ArrayList<String>());
@@ -46,26 +46,26 @@ public class SwearToggle extends JavaPlugin implements Listener {
     StringBuilder, then set newMessage to sb.toString().
     */
         Set<Player> filteredPlayers = new HashSet<>();
-        String newMessage = event.getMessage();
-        String[] splitMessage = event.getMessage().split(" ");
+        String newMessage; // Warning said setting to event.getMessage() is redundant. Why?
+        String[] splitMessage = event.getMessage().split(" "); // Could this (" ") be causing problems?
         StringBuilder sb = new StringBuilder();
         StringBuilder mb = new StringBuilder();
 
-        for (String word : wordList) {
-            for (String pardoned : pardonedList) {
-                for (int i = 0; i < word.length(); i++) {
-                    sb.append("*");
-                }
-                for (String split : splitMessage) {
-                    if (StringUtils.containsIgnoreCase(split, word)) {
-                        if (!(split.equalsIgnoreCase(pardoned))) {
+        for (String split : splitMessage) {
+            for (String word : wordList) {
+                if (StringUtils.containsIgnoreCase(split, word)) {
+                    for (String pardoned : pardonedList) {
+                        if (!(word.equalsIgnoreCase(pardoned))) {
+                            for (int i = 0; i < word.length(); i++) {
+                                sb.append("*");
+                            }
                             split = split.replace(word, sb.toString());
                         }
                     }
-                    mb.append(split);
-                    mb.append(" ");
                 }
             }
+            mb.append(split);
+            mb.append(" ");
         }
         newMessage = mb.toString();
 
