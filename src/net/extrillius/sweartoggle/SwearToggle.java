@@ -61,7 +61,7 @@ public class SwearToggle extends JavaPlugin implements Listener {
                             for (int i = 0; i < word.length(); i++) {
                                 sb.append("*");
                             }
-                            split = split.replace(word, sb.toString());
+                            split = split.replace(word, sb.toString()); // "word" is the word defined in the config. therefore always case-sensitive
                             sb.setLength(0);
                         }
                     }

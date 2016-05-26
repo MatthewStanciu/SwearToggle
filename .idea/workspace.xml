@@ -28,8 +28,8 @@
       <file leaf-file-name="SwearToggle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+            <state relative-caret-position="270">
+              <caret line="63" column="148" selection-start-line="63" selection-start-column="148" selection-end-line="63" selection-end-column="148" />
               <folding />
             </state>
           </provider>
@@ -282,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464263014756</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Cleaned up comments">
+      <created>1464268823426</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1464268823426</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -325,7 +332,8 @@
     <MESSAGE value="Message now prints correctly; Multiple banned words generate more stars, and pardoned words are not censored. Most likely organization issue with the loops" />
     <MESSAGE value="Fixed a few annoying and unnecessary warnings that were bugging me" />
     <MESSAGE value="Fixed StringBuilder; pardoned word problem remains; words are now case-sensitive again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed StringBuilder; pardoned word problem remains; words are now case-sensitive again" />
+    <MESSAGE value="Cleaned up comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -346,8 +354,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+        <state relative-caret-position="270">
+          <caret line="63" column="148" selection-start-line="63" selection-start-column="148" selection-end-line="63" selection-end-column="148" />
           <folding />
         </state>
       </provider>
