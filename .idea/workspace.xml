@@ -28,8 +28,8 @@
       <file leaf-file-name="SwearToggle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="-480">
+              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -268,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464233341427</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed a few annoying and unnecessary warnings that were bugging me">
+      <created>1464233682368</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1464233682368</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -309,7 +316,8 @@
     <MESSAGE value="Iterator does not work" />
     <MESSAGE value="Iterator does not work. Reverted" />
     <MESSAGE value="Message now prints correctly; Multiple banned words generate more stars, and pardoned words are not censored. Most likely organization issue with the loops" />
-    <option name="LAST_COMMIT_MESSAGE" value="Message now prints correctly; Multiple banned words generate more stars, and pardoned words are not censored. Most likely organization issue with the loops" />
+    <MESSAGE value="Fixed a few annoying and unnecessary warnings that were bugging me" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a few annoying and unnecessary warnings that were bugging me" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -330,8 +338,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="-480">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
           <folding />
         </state>
       </provider>

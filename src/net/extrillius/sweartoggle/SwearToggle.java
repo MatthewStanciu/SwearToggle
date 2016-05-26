@@ -12,6 +12,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.*;
 
+/*
+ * Created by TechBug2012 on 5/20/16.
+ */
+
 public class SwearToggle extends JavaPlugin implements Listener {
     private List<String> wordList;
     private List<String> playerList;
@@ -53,11 +57,12 @@ public class SwearToggle extends JavaPlugin implements Listener {
             for (String word : wordList) {
                 if (StringUtils.containsIgnoreCase(split, word)) {
                     for (String pardoned : pardonedList) {
-                        if (!(word.equalsIgnoreCase(pardoned))) {
+                        if (!(split.equalsIgnoreCase(pardoned))) {
                             for (int i = 0; i < word.length(); i++) {
                                 sb.append("*");
                             }
                             split = split.replace(word, sb.toString());
+                            sb.setLength(0);
                         }
                     }
                 }
