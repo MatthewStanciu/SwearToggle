@@ -28,8 +28,8 @@
       <file leaf-file-name="SwearToggle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
-              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            <state relative-caret-position="75">
+              <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -275,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464233682368</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed StringBuilder; pardoned word problem remains; words are now case-sensitive again">
+      <created>1464263014756</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1464263014756</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -317,7 +324,8 @@
     <MESSAGE value="Iterator does not work. Reverted" />
     <MESSAGE value="Message now prints correctly; Multiple banned words generate more stars, and pardoned words are not censored. Most likely organization issue with the loops" />
     <MESSAGE value="Fixed a few annoying and unnecessary warnings that were bugging me" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a few annoying and unnecessary warnings that were bugging me" />
+    <MESSAGE value="Fixed StringBuilder; pardoned word problem remains; words are now case-sensitive again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed StringBuilder; pardoned word problem remains; words are now case-sensitive again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -338,8 +346,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state relative-caret-position="75">
+          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
           <folding />
         </state>
       </provider>

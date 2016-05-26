@@ -48,8 +48,8 @@ public class SwearToggle extends JavaPlugin implements Listener {
     StringBuilder, then set newMessage to sb.toString().
     */
         Set<Player> filteredPlayers = new HashSet<>();
-        String newMessage; // Warning said setting to event.getMessage() is redundant. Why?
-        String[] splitMessage = event.getMessage().split(" "); // Could this (" ") be causing problems?
+        String newMessage = event.getMessage();
+        String[] splitMessage = newMessage.split(" ");
         StringBuilder sb = new StringBuilder();
         StringBuilder mb = new StringBuilder();
 
