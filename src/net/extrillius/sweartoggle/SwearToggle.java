@@ -12,9 +12,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.*;
 
-/**
- * Created by TechBug2012 on 5/20/16.
- */
 public class SwearToggle extends JavaPlugin implements Listener {
     private List<String> wordList;
     private List<String> playerList;
@@ -37,6 +34,7 @@ public class SwearToggle extends JavaPlugin implements Listener {
         getServer().getPluginManager().registerEvents(this, this);
     }
 
+    @SuppressWarnings("unused")
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event) {
     /*

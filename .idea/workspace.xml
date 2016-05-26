@@ -28,8 +28,8 @@
       <file leaf-file-name="SwearToggle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="59" column="47" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+            <state relative-caret-position="45">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -261,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464232416601</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Message now prints correctly; Multiple banned words generate more stars, and pardoned words are not censored. Most likely organization issue with the loops">
+      <created>1464233341426</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1464233341427</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -301,7 +308,8 @@
     <MESSAGE value="New iterator solution" />
     <MESSAGE value="Iterator does not work" />
     <MESSAGE value="Iterator does not work. Reverted" />
-    <option name="LAST_COMMIT_MESSAGE" value="Iterator does not work. Reverted" />
+    <MESSAGE value="Message now prints correctly; Multiple banned words generate more stars, and pardoned words are not censored. Most likely organization issue with the loops" />
+    <option name="LAST_COMMIT_MESSAGE" value="Message now prints correctly; Multiple banned words generate more stars, and pardoned words are not censored. Most likely organization issue with the loops" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -322,8 +330,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="59" column="47" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+        <state relative-caret-position="45">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
