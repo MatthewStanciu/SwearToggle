@@ -41,12 +41,6 @@ public class SwearToggle extends JavaPlugin implements Listener {
     @SuppressWarnings("unused")
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event) {
-    /*
-    So my idea here is that I split the message and check each word individually. If that word is a
-    banned word and not a pardoned word, then censor it. If it is both a banned word AND a pardoned
-    word, don't do anything -- break, return, whatever. As each word is finished, put it into a
-    StringBuilder, then set newMessage to sb.toString().
-    */
         Set<Player> filteredPlayers = new HashSet<>();
         String newMessage = event.getMessage();
         String[] splitMessage = newMessage.split(" ");
@@ -61,7 +55,7 @@ public class SwearToggle extends JavaPlugin implements Listener {
                             for (int i = 0; i < word.length(); i++) {
                                 sb.append("*");
                             }
-                            split = split.replaceAll("(?i)" + word, sb.toString()); // "word" is the word defined in the config. therefore always case-sensitive
+                            split = split.replaceAll("(?i)" + word, sb.toString());
                             sb.setLength(0);
                         }
                     }
