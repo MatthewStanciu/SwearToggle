@@ -1,6 +1,5 @@
 package net.extrillius.sweartoggle;
 
-import org.apache.commons.lang3.StringUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -11,6 +10,8 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /*
  * Created by TechBug2012 on 5/20/16.
@@ -49,15 +50,18 @@ public class SwearToggle extends JavaPlugin implements Listener {
 
         for (String split : splitMessage) {
             for (String word : wordList) {
-                if (StringUtils.containsIgnoreCase(split, word)) {
-                    for (String pardoned : pardonedList) {
-                        if (!(split.equalsIgnoreCase(pardoned))) {
-                            for (int i = 0; i < word.length(); i++) {
-                                sb.append("*");
-                            }
-                            split = split.replaceAll("(?i)" + word, sb.toString());
-                            sb.setLength(0);
+                Pattern pattern = Pattern.compile("\\w*(" + word + ")\\w*", Pattern.CASE_INSENSITIVE);
+                Matcher matcher = pattern.matcher(split);
+                for (String pardoned : pardonedList) {
+                    Pattern pattern1 = Pattern.compile("\\w*(" + pardoned + ")\\w*", Pattern.CASE_INSENSITIVE);
+                    Matcher matcher1 = pattern1.matcher(split);
+                    if (matcher.find() && !(matcher1.find())) {
+                        String match = matcher.group(1);
+                        for (int i = 0; i < match.length(); i++) {
+                            sb.append("*");
                         }
+                        split = split.replaceAll(match, sb.toString());
+                        sb.setLength(0);
                     }
                 }
             }
@@ -204,8 +208,7 @@ public class SwearToggle extends JavaPlugin implements Listener {
                         reloadConfig();
                         sender.sendMessage(ChatColor.DARK_AQUA + args[1] +
                                 ChatColor.GREEN + " will now be censored.");
-                    }
-                    else {
+                    } else {
                         sender.sendMessage(ChatColor.RED + "That word is already unpardoned!");
                         return false;
                     }
