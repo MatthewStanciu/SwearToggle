@@ -28,8 +28,8 @@
       <file leaf-file-name="SwearToggle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+            <state relative-caret-position="277">
+              <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -454,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464486998912</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="removed a comment">
+      <created>1464489939994</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1464489939994</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -508,7 +515,8 @@
     <MESSAGE value="Cleaned up comments" />
     <MESSAGE value="Added a comment pointing out a possible issue" />
     <MESSAGE value="case-insensitive problem fixed!" />
-    <option name="LAST_COMMIT_MESSAGE" value="case-insensitive problem fixed!" />
+    <MESSAGE value="removed a comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed a comment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -545,8 +553,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+        <state relative-caret-position="277">
+          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
           <folding />
         </state>
       </provider>
