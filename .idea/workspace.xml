@@ -28,8 +28,8 @@
       <file leaf-file-name="SwearToggle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+            <state relative-caret-position="472">
+              <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -496,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464561847560</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="reorganized again, but still doesn't work">
+      <created>1464563528025</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1464563528025</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -556,7 +563,8 @@
     <MESSAGE value="added a quick statement that i forgot" />
     <MESSAGE value="new regex method; does not finish pardoned loop" />
     <MESSAGE value="reorganized a little bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorganized a little bit" />
+    <MESSAGE value="reorganized again, but still doesn't work" />
+    <option name="LAST_COMMIT_MESSAGE" value="reorganized again, but still doesn't work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -593,8 +601,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        <state relative-caret-position="472">
+          <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
           <folding />
         </state>
       </provider>
