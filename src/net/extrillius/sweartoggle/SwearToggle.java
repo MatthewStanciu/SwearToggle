@@ -205,6 +205,10 @@ public class SwearToggle extends JavaPlugin implements Listener {
                         sender.sendMessage(ChatColor.DARK_AQUA + args[1] +
                                 ChatColor.GREEN + " will now be censored.");
                     }
+                    else {
+                        sender.sendMessage(ChatColor.RED + "That word is already unpardoned!");
+                        return false;
+                    }
                 }
             } else {
                 sender.sendMessage(ChatColor.RED + "Invalid parameters!");
