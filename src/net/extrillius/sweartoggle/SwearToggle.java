@@ -10,6 +10,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.*;
+import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -35,8 +36,6 @@ public class SwearToggle extends JavaPlugin implements Listener {
         getConfig().options().copyDefaults(true);
         saveConfig();
         reloadConfig();
-
-        getServer().getPluginManager().registerEvents(this, this);
     }
 
     @SuppressWarnings("unused")
@@ -50,19 +49,19 @@ public class SwearToggle extends JavaPlugin implements Listener {
 
         for (String split : splitMessage) {
             for (String word : wordList) {
-                Pattern pattern = Pattern.compile("\\w*(" + word + ")\\w*", Pattern.CASE_INSENSITIVE);
+                Pattern pattern = Pattern.compile("\\b*(" + word + ")\\b*", Pattern.CASE_INSENSITIVE);
                 Matcher matcher = pattern.matcher(split);
-                for (String pardoned : pardonedList) {
-                    Pattern pattern1 = Pattern.compile("\\w*(" + pardoned + ")\\w*", Pattern.CASE_INSENSITIVE);
-                    Matcher matcher1 = pattern1.matcher(split);
-                    if (matcher.find()) {
+                if (matcher.find()) {
+                    for (String pardoned : pardonedList) {
+                        Pattern pattern1 = Pattern.compile("\\w*(" + pardoned + ")\\w*", Pattern.CASE_INSENSITIVE);
+                        Matcher matcher1 = pattern1.matcher(split);
+
                         if (!(matcher1.find())) {
                             String match = matcher.group(1);
                             for (int i = 0; i < match.length(); i++) {
                                 sb.append("*");
                             }
-                            split = split.replaceAll(match, sb.toString());
-                            sb.setLength(0);
+                            split = split.replace(match, sb.toString());
                         }
                     }
                 }
