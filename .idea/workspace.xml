@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="277">
-              <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+              <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -461,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464489939994</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added a test comment">
+      <created>1464490493096</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1464490493096</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -516,7 +523,8 @@
     <MESSAGE value="Added a comment pointing out a possible issue" />
     <MESSAGE value="case-insensitive problem fixed!" />
     <MESSAGE value="removed a comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed a comment" />
+    <MESSAGE value="added a test comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a test comment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -554,7 +562,7 @@
     <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
-          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+          <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
           <folding />
         </state>
       </provider>
