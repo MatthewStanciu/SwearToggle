@@ -28,8 +28,8 @@
       <file leaf-file-name="SwearToggle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
+            <state relative-caret-position="-428">
+              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -503,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464563528025</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="reverted">
+      <created>1464564001306</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1464564001306</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -564,7 +571,8 @@
     <MESSAGE value="new regex method; does not finish pardoned loop" />
     <MESSAGE value="reorganized a little bit" />
     <MESSAGE value="reorganized again, but still doesn't work" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorganized again, but still doesn't work" />
+    <MESSAGE value="reverted" />
+    <option name="LAST_COMMIT_MESSAGE" value="reverted" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -601,8 +609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
+        <state relative-caret-position="-428">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding />
         </state>
       </provider>

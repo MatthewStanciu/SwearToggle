@@ -1,5 +1,6 @@
 package net.extrillius.sweartoggle;
 
+import org.apache.commons.lang3.StringUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -47,22 +48,22 @@ public class SwearToggle extends JavaPlugin implements Listener {
         String[] splitMessage = newMessage.split(" ");
         StringBuilder sb = new StringBuilder();
         StringBuilder mb = new StringBuilder();
+        boolean whitelisted = false;
 
         for (String split : splitMessage) {
+            for (String pardoned : pardonedList) {
+                if (split.equalsIgnoreCase(pardoned)) {
+                    whitelisted = true;
+                    break;
+                }
+            }
             for (String word : wordList) {
-                Pattern pattern = Pattern.compile("\\w*(" + word + ")\\w*", Pattern.CASE_INSENSITIVE);
-                Matcher matcher = pattern.matcher(split);
-                for (String pardoned : pardonedList) {
-                    Pattern pattern1 = Pattern.compile("\\w*(" + pardoned + ")\\w*", Pattern.CASE_INSENSITIVE);
-                    Matcher matcher1 = pattern1.matcher(split);
-                    if (matcher.find() && !(matcher1.find())) {
-                        String match = matcher.group(1);
-                        for (int i = 0; i < match.length(); i++) {
-                            sb.append("*");
-                        }
-                        split = split.replaceAll(match, sb.toString());
-                        sb.setLength(0);
+                if (StringUtils.containsIgnoreCase(split, word) && !whitelisted) {
+                    for (int i = 0; i < word.length(); i++) {
+                        sb.append("*");
                     }
+                    split = split.replaceAll(word, sb.toString());
+                    sb.setLength(0);
                 }
             }
             mb.append(split);
