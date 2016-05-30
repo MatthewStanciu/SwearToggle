@@ -48,9 +48,9 @@ public class SwearToggle extends JavaPlugin implements Listener {
         String[] splitMessage = newMessage.split(" ");
         StringBuilder sb = new StringBuilder();
         StringBuilder mb = new StringBuilder();
-        boolean whitelisted = false;
 
         for (String split : splitMessage) {
+            boolean whitelisted = false;
             for (String pardoned : pardonedList) {
                 if (split.equalsIgnoreCase(pardoned)) {
                     whitelisted = true;
