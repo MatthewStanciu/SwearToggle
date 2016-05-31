@@ -28,8 +28,8 @@
       <file leaf-file-name="SwearToggle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+            <state relative-caret-position="322">
+              <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -524,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464644068909</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="mvoed boolean to fix issue">
+      <created>1464646812602</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1464646812602</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -588,7 +595,8 @@
     <MESSAGE value="reverted" />
     <MESSAGE value="Everything is fixed!" />
     <MESSAGE value="whoops fixed a small issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="whoops fixed a small issue" />
+    <MESSAGE value="mvoed boolean to fix issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="mvoed boolean to fix issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -625,8 +633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/extrillius/sweartoggle/SwearToggle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        <state relative-caret-position="322">
+          <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
           <folding />
         </state>
       </provider>
